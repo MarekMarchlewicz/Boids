@@ -197,6 +197,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &367881248
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 367881249}
+  m_Layer: 0
+  m_Name: Leader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &367881249
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 367881248}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.2528324, y: 1.0323286, z: 7.718481}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &936195028
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,7 +255,15 @@ MonoBehaviour:
   boidsCount: 10
   boidPrefab: {fileID: 1567412221193182, guid: e555b24d5e617844fa5a7335a4eaed50, type: 2}
   spawnRadius: 5
-  proximityRadius: 2
+  proximityRadius: 5
+  velocity: 10
+  rotationSpeed: 3
+  leaderTransform: {fileID: 367881249}
+  cohesionCoeff: 1
+  alignmentCoeff: 1
+  separationCoeff: 1
+  randomCoeff: 10
+  leaderCoeff: 3
 --- !u!4 &936195030
 Transform:
   m_ObjectHideFlags: 0
